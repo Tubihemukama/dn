@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📊 Excel Data Analyzer")
+st.title("📊 Data Analyzer")
 
 upload = st.file_uploader("Upload an Excel File", type=["xlsx"])
 
