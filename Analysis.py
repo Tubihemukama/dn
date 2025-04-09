@@ -21,13 +21,7 @@ if upload is not None:
     numeric_variable_list = dataset.select_dtypes(include="number").columns
     non_numeric_variable_list = dataset.select_dtypes(include=["object", "string", "category"]).columns
 
-    # Numeric Summary
-    st.subheader("📈 Numeric Variable Summary")
-    def numeric_variables():
-        for var in numeric_variable_list:
-            mean_var = dataset[var].mean()
-            st.write(f"**Mean of {var}:** {mean_var:.2f}")
-    numeric_variables()
+   
 
     # Categorical Summary
     st.subheader("🔠 Non-Numeric Variable Frequency Table")
